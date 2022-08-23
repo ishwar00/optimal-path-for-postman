@@ -1,0 +1,39 @@
+adjacent lists of locations 
+ BVBTU               ->  ( DECATHLON       , 750 )  ( MORE            , 550 )  ( BVB_BACKGATE    , 250 )  ( SAKHRE_SCHL     , 90  )  ( PRERANA_HOSTEL  , 60  )  ( HUBLI_POST_OFFICE, 50  )  
+ HUBLI_POST_OFFICE   ->  ( INDIAN_OIL      , 300 )  ( HP_PG           , 100 )  ( PRERANA_CLG     , 100 )  ( BVBTU           , 50  )  
+ PRERANA_CLG         ->  ( UNKAL           , 150 )  ( SAKHRE_SCHL     , 120 )  ( HUBLI_POST_OFFICE, 100 )  
+ HP_PG               ->  ( RAM-APARTMENTS  , 150 )  ( RAMBAPURI       , 80  )  ( HUBLI_POST_OFFICE, 100 )  
+ INDIAN_OIL          ->  ( PC_JOBIN        , 20  )  ( RAM-APARTMENTS  , 160 )  ( HUBLI_POST_OFFICE, 300 )  
+ PRERANA_HOSTEL      ->  ( BVBTU           , 60  )  
+ SAKHRE_SCHL         ->  ( PRERANA_CLG     , 120 )  ( NPBETTA         , 350 )  ( SRINAGAR        , 200 )  ( BVBTU           , 90  )  
+ BVB_BACKGATE        ->  ( KESHWAPUR       , 1500 )  ( NPBETTA         , 800 )  ( SBI             , 200 )  ( BVBTU           , 250 )  
+ SRINAGAR            ->  ( UNKAL           , 200 )  ( NPBETTA         , 400 )  ( SAKHRE_SCHL     , 200 )  
+ NPBETTA             ->  ( BVB_BACKGATE    , 800 )  ( SRINAGAR        , 400 )  ( SAKHRE_SCHL     , 350 )  
+ UNKAL               ->  ( POLICE-STATION  , 180 )  ( V-MART          , 300 )  ( SRINAGAR        , 200 )  ( PRERANA_CLG     , 150 )  
+ V-MART              ->  ( POLICE-STATION  , 230 )  ( UNKAL           , 300 )  
+ POLICE-STATION      ->  ( RAMBAPURI       , 350 )  ( V-MART          , 230 )  ( UNKAL           , 180 )  
+ RAMBAPURI           ->  ( MORE            , 800 )  ( KYRIAD          , 250 )  ( HP_PG           , 80  )  ( POLICE-STATION  , 350 )  
+ KYRIAD              ->  ( AXIS_BANK       , 100 )  ( RAM-APARTMENTS  , 140 )  ( RAMBAPURI       , 250 )  
+ MORE                ->  ( DECATHLON       , 900 )  ( CHETAN_CLG      , 550 )  ( AXIS_BANK       , 650 )  ( RAMBAPURI       , 800 )  
+ RAM-APARTMENTS      ->  ( KYRIAD          , 140 )  ( INDIAN_OIL      , 160 )  ( HP_PG           , 150 )  
+ PC_JOBIN            ->  ( SBI             , 350 )  ( INDIAN_OIL      , 20  )  
+ AXIS_BANK           ->  ( MORE            , 650 )  ( COURT           , 600 )  ( SBI             , 300 )  ( KYRIAD          , 100 )  
+ SBI                 ->  ( BVB_BACKGATE    , 200 )  ( RELIANCE_DIG    , 30  )  ( AXIS_BANK       , 300 )  ( PC_JOBIN        , 350 )  
+ RELIANCE_DIG        ->  ( HOSUR           , 400 )  ( SBI             , 30  )  
+ KESHWAPUR           ->  ( HDMP            , 600 )  ( BVB_BACKGATE    , 1500 )  
+ HOSUR               ->  ( URBAN_OASIS     , 2000 )  ( HDMP            , 850 )  ( RELIANCE_DIG    , 400 )  
+ HDMP                ->  ( KESHWAPUR       , 600 )  ( HOSUR           , 850 )  
+ URBAN_OASIS         ->  ( COURT           , 800 )  ( DECATHLON       , 450 )  ( HOSUR           , 2000 )  
+ DECATHLON           ->  ( MORE            , 900 )  ( CHETAN_CLG      , 750 )  ( URBAN_OASIS     , 450 )  
+ COURT               ->  ( AXIS_BANK       , 600 )  ( URBAN_OASIS     , 800 )  
+
+shivpriya will deliver through : BVB_BACKGATE -> BVBTU -> DECATHLON -> URBAN_OASIS -> COURT -> AXIS_BANK -> KYRIAD -> RAM-APARTMENTS -> INDIAN_OIL -> RAM-APARTMENTS -> HP_PG -> HUBLI_POST_OFFICE -> PRERANA_CLG -> HUBLI_POST_OFFICE -> BVBTU -> PRERANA_HOSTEL -> BVBTU -> BVB_BACKGATE 
+distance needs to be travelled is 4280 Units
+letters to be delivered are : 
+                        PRERANA_CLG MANAGER 1 
+                          DECATHLON MANAGAER_MR.HARSH 1 
+                              COURT ADVO.SAJAN_MEHTA 1 
+                     PRERANA_HOSTEL WARDEN_RAMU 2 
+                              HP_PG WARDEN_VIJAY 3 
+                         INDIAN_OIL MR.SHANKAR 3 
+                              BVBTU PRINCIPAL_GIRIRAJ 1 
