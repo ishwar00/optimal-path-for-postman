@@ -2,14 +2,12 @@
 #include"letter_manager.h"
 #include"route_optimizer.h"
 
-//! Don't touch!!   
 void terminate(char str[]) {
     printf("Oops! unexpected data in input stream > ....." CYN "%s" reset ".... <\n", str);
     puts(CYN "Aborting..." reset);
     exit(1);
 }
 
-//! Don't touch!!   
 graph construct_empty_graph(FILE* input) {
     graph G = { 0, 0, NULL, NULL };
     if (fscanf(input, "%d", &G.V) != 1) terminate("while reading V");
@@ -19,7 +17,6 @@ graph construct_empty_graph(FILE* input) {
     return G;
 }
 
-//! Don't touch!!   
 location_ptr new_node(location v) {
     location_ptr store = (location_ptr)calloc(1, sizeof(location));
     strcpy(store->address, v.address);
@@ -28,9 +25,7 @@ location_ptr new_node(location v) {
     return store;
 }
 
-
-//! Don't touch!!   
-void add_edge(location u, location v, graph_ptr G) {
+void add_edge(location u, location v, graph* G) {
     location_ptr store = new_node(v);
     store->next = G->adj_list[u.label];
     G->adj_list[u.label] = store;
@@ -40,8 +35,7 @@ void add_edge(location u, location v, graph_ptr G) {
     G->adj_list[v.label] = store;
 }
 
-//! Don't touch!!   
-void label_location(location_ptr u, graph_ptr G) {     
+void label_location(location* u, graph* G) {     
     int i = 0;
     for (; i < G->V and G->label_map[i] != NULL; ++i) {
         if (not(strcmp(G->label_map[i], u->address))) {
@@ -55,9 +49,8 @@ void label_location(location_ptr u, graph_ptr G) {
     }
 }
 
-//! Don't touch!!   
-void construct_graph(graph_ptr G, FILE* input) {
-    int cost;
+void construct_graph(graph* G, FILE* input) {
+    int cost = 0;
     while (true) {
         location u = { 0, 0, { 0 }, NULL };
         location v = { 0, 0, { 0 }, NULL };
@@ -77,8 +70,6 @@ void construct_graph(graph_ptr G, FILE* input) {
     printf("\n"GRN "Done! reading locations with " YEL "%d edges\n" reset, G->E) ;
 }
 
-
-//!   Don't touch!!!   
 void print(graph Graph, FILE* output) {
     fprintf(output, "adjacent lists of locations \n");
     for (int i = 0; i < Graph.V; ++i) {

@@ -1,64 +1,33 @@
-27
-50    HUBLI_POST_OFFICE 	 BVBTU		  	           
-100   HUBLI_POST_OFFICE 	 PRERANA_CLG 	 	
-100   HUBLI_POST_OFFICE   	 HP_PG		 	    
-300   HUBLI_POST_OFFICE 	 INDIAN_OIL 	 	
-60    BVBTU		 	         PRERANA_HOSTEL		
-90    BVBTU 			     SAKHRE_SCHL		
-250   BVBTU			         BVB_BACKGATE		
-200   SAKHRE_SCHL		     SRINAGAR		
-350   SAKHRE_SCHL		     NPBETTA		
-120   SAKHRE_SCHL		     PRERANA_CLG	
-400   NPBETTA			     SRINAGAR		
-150   PRERANA_CLG		     UNKAL			
-200   UNKAL			         SRINAGAR		
-300   UNKAL 			     V-MART			
-180   UNKAL 			     POLICE-STATION	
-230   POLICE-STATION		 V-MART			
-350   RAMBAPURI		         POLICE-STATION		
-80    RAMBAPURI 		     HP_PG			
-250   RAMBAPURI 		     KYRIAD			
-800   RAMBAPURI 		     MORE 				
-150   HP_PG			         RAM-APARTMENTS		
-160   RAM-APARTMENTS	     INDIAN_OIL		
-140   RAM-APARTMENTS	     KYRIAD		 	
-20    INDIAN_OIL		     PC_JOBIN	        
-100   KYRIAD			     AXIS_BANK		
-350   PC_JOBIN		         SBI			    
-300   SBI			         AXIS_BANK		
-30    SBI			         RELIANCE_DIG		
-200   SBI			         BVB_BACKGATE		
-800   NPBETTA			     BVB_BACKGATE	 	
-1500  BVB_BACKGATE		     KESHWAPUR     
-400   RELIANCE_DIG		     HOSUR			        
-850   HOSUR			         HDMP 			        
-600   HDMP			         KESHWAPUR	        
-2000   HOSUR 			     URBAN_OASIS	        
-450   URBAN_OASIS		     DECATHLON		        
-800   URBAN_OASIS		     COURT			        
-600   COURT 			     AXIS_BANK		        
-650   AXIS_BANK		         MORE			        
-550   MORE			         CHETAN_CLG		            
-750   CHETAN_CLG		     DECATHLON		        
-900   DECATHLON 		     MORE			        
+11
+1  a b   
+4  a c  
+2  b d  
+4  c b  
+8  d i  
+7  i j  
+5  j k  
+10 k h  
+3  h g  
+2  g f  
+7  f e  
+9  g e  
+6  e h  
+4  e d  
+6  d h  
+1  h i  
 done
 
-BVB_BACKGATE
+i
 
-BVBTU				PRINCIPAL_GIRIRAJ				1
-PRERANA_CLG			MANAGER						    1
-HP_PG				WARDEN_VIJAY					3
-INDIAN_OIL			MR.SHANKAR				     	3
-PRERANA_HOSTEL		WARDEN_RAMU				     	2
-
-DECATHLON			MANAGAER_MR.HARSH				1
-
-COURT 				ADVO.SAJAN_MEHTA				1
+k rust 1
+f zig  1
+h jai  3
+a go   3
+e Ocaml 4
 
 -1 -1 -1
 
-shivpriya
+zoro
+luffy
 
 -1
-
-

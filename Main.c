@@ -33,7 +33,6 @@ int main() {
     
     graph G = construct_empty_graph(input);
     construct_graph(&G, input);
-    print(G, output);
     
     char post_office[30] = { 0 };
     if (fscanf(input, "%s", post_office) != 1) terminate("while reading post office");
@@ -43,6 +42,7 @@ int main() {
     PostManList PML = get_postmans(input);
     distribute_letters(LC, &PML);
     for (PostMan* i = PML.list; i != NULL; i = i->next) {
+        printf("\n" GRN "searching optimal path for %s..." reset "\n", i->name);
         Find_Route(post_office, G, i);
         print_route(G, i, output);
         sort_letters_based_on_route(i, G);

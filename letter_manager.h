@@ -4,7 +4,6 @@
 
 extern bool must_pass[200];
 
-
 typedef struct {
     char address[30];
     char name[30];
@@ -46,8 +45,5 @@ void print_route(graph, PostMan*, FILE*);
 void print_letters(letter_collection, FILE*);
 
 void sort_letters_based_on_route(PostMan*, graph);
-
-
-
 
 #endif // !letter   

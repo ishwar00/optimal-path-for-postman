@@ -12,7 +12,6 @@ bool read_letter(letter* L, FILE* input) {
     return true;
 }
 
-
 letter_collection collect_letters(FILE* input) {
     letter_collection LC = { NULL, 0 };
     LC.letters = (letter*)calloc(150, sizeof(letter));

@@ -14,7 +14,6 @@ long long cur_cost = 0;
 long long travelled = 0;
 long long comb = 0;
 
-
 void initialize(int Route[]) {
     min_cost  = __INT64_MAX__;
     cur_cost  = 0;
@@ -30,13 +29,15 @@ void initialize(int Route[]) {
     }
 }
 
-
 void label_letters(letter_collection LC, graph G) {
     for (int i = 0; i < LC.size; ++i) {
         for (int j = 0; j < G.V; ++j) {
             if (not(strcmp(LC.letters[i].address, G.label_map[j]))) {
                 if (must_pass[j]) {
-                    printf("\n" CYN "input might contain duplic letter %s %s %d" reset "\n", LC.letters[i].address, LC.letters[i].name, LC.letters[i].stamp);
+                    printf("\n" CYN "input might contain duplic letter %s %s %d" reset "\n", 
+                            LC.letters[i].address, 
+                            LC.letters[i].name, 
+                            LC.letters[i].stamp);
                 } else {
                     must_pass[j] = true;
                     MP_V++;
@@ -53,6 +54,7 @@ int label_start(char S[], graph G) {
             return i;
         }
     }
+    return -1;
 }
 
 void PDO(int S, graph G, int Route[], int pre_node) {
@@ -76,13 +78,11 @@ void PDO(int S, graph G, int Route[], int pre_node) {
                 it = it->next;
             }
         } else {
-            printf("\ntravelled : %lld\n", travelled);
             for (int i = 0; i < 200; ++i) Route[i] = -1;
             for (int i = 0; i != route_ptr; ++i) {
                 Route[i] = route[i];
-                printf(WHT"%s"CYN" -> " reset, G.label_map[Route[i]]);
+                // printf(WHT"%s"CYN" -> " reset, G.label_map[Route[i]]); // print all discovered paths
             }
-            puts("");
             min_cost = cur_cost;
         }
         if (flag) {
@@ -104,6 +104,4 @@ void Find_Route(char S[], graph G, PostMan* PM) {
     label_letters(PM->LC, G);
     PDO(begin, G, PM->Route, begin);
     PM->dist_travel = min_cost;
-    printf("\ntravelled : %lld\n", travelled);
 }
-
