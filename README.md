@@ -7,7 +7,7 @@ Formally, we have graph, and we need to visit a specific set of nodes, such that
 ## How does it find?
 I had two days left, so it is a _bruteforce_ approach, infact, everything is bruteforeced here.
 All hard work is done by procedure `PDO` in `route_optimizer.c`, which is more like a `Depth First Search`, except that it has lot more freedom.
-It can visit a node more than once. It assigns a __unique__ integer to every node it visits.
+It can visit a node more than once. It assigns a __unique__ integer to every new node it visits.
 Only restriction it has is, it cannot go to a nieghbouring node which has higher value than the current node. This restriction is necessary
 otherwise, it might get stuck in an infinite loop. By doing so, it can trace out any kind of complicated path. It finds all possible paths
 and picks best one.
