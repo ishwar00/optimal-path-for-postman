@@ -95,7 +95,6 @@ void PDO(int S, graph G, int Route[], int pre_node) {
     }
 }
 
-
 void Find_Route(char S[], graph G, PostMan* PM) {
     PM->Route = (int*)calloc(200, sizeof(int));
     initialize(PM->Route);
